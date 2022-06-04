@@ -126,4 +126,16 @@ padding: 0;
       $('.download-video').html('<iframe style="width:100%;height:60px;border:0;overflow:hidden;" scrolling="no" src="https://loader.to/api/button/?url='+link+'&f='+fromate+'"></iframe>');
   }
 </script>
-</html>
+
+ <center> <div class="counter">
+
+  </div></center>
+
+<script>
+    let counterContainer = document.querySelector(".counter");
+let visitCount = localStorage.getItem("views");
+localStorage.setItem("views", 1);
+visitCount = Number(visitCount) + 1;
+localStorage.setItem("views", visitCount);
+counterContainer.innerHTML = visitCount + " visites";
+  </script>
