@@ -127,15 +127,6 @@ padding: 0;
   }
 </script>
 
- <center> <div class="counter">
 
-  </div></center>
 </html>
-<script>
-    let counterContainer = document.querySelector(".counter");
-let visitCount = localStorage.getItem("views");
-localStorage.setItem("views", 1);
-visitCount = Number(visitCount) + 1;
-localStorage.setItem("views", visitCount);
-counterContainer.innerHTML = visitCount + " visites";
-  </script>
+
